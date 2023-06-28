@@ -20,6 +20,7 @@ export class LoginRegistroComponent implements OnInit {
   form2: FormGroup
   products: any;
   loading: boolean = false;
+  isLoggedIn: boolean = false;
   constructor(
     private fb: FormBuilder,
     private _userService: UserService,
@@ -114,10 +115,12 @@ export class LoginRegistroComponent implements OnInit {
         localStorage.setItem('token', data.token)
         localStorage.setItem('isLoged', "true");
         this._messageService.msgSuccess(data)
+        this.isLoggedIn=true;
       },
       error: (e: HttpErrorResponse) => {
         this._messageService.msgError(e);
         this.loading = false;
+        this.isLoggedIn=false;
       }
     })
   }

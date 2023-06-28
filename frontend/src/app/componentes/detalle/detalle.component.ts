@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
+import Swal from 'sweetalert2'; 
 import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 import { ProductService } from 'src/app/services/product.service';
@@ -14,6 +14,9 @@ import { Product } from 'src/app/interfaces/product';
   styleUrls: ['./detalle.component.css'],
 })
 export class DetalleComponent implements OnInit {
+
+   
+  
   detail:any;
   idProduct: number = 0;
 
