@@ -14,11 +14,11 @@ import { ToastrModule } from 'ngx-toastr';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { AddTokenInterceptor } from './utils/add-token.interceptor';
 import { CarritoCompraComponent } from './componentes/carrito-compra/carrito-compra.component';
+import { PerfilUsuarioComponent } from './componentes/perfil-usuario/perfil-usuario.component';
 import { DetalleComponent } from './componentes/detalle/detalle.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SidebarsComponent } from './componentes/sidebars/sidebars.component';
-
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { SidebarsComponent } from './componentes/sidebars/sidebars.component';
     SpinnerComponent,
     CarritoCompraComponent,
     DetalleComponent,
+    PerfilUsuarioComponent,
     HomeComponent,
     SidebarsComponent,
   ],
